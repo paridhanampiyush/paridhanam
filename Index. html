@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PARIDHANAM | Premium Garment Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    background:#faf7f2;
+    color:#222;
+}
+header{
+    background:#111;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+header h1{
+    color:#d4af37;
+    font-family:'Playfair Display', serif;
+    letter-spacing:2px;
+}
+nav a{
+    color:#fff;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:300;
+}
+nav a:hover{
+    color:#d4af37;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd47');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+}
+.hero h2{
+    font-size:55px;
+    font-family:'Playfair Display', serif;
+}
+.hero p{
+    margin:20px 0;
+    font-size:18px;
+}
+.hero button{
+    padding:12px 35px;
+    background:#d4af37;
+    border:none;
+    font-size:16px;
+    cursor:pointer;
+}
+.hero button:hover{
+    background:#c39c2e;
+}
+
+section{
+    padding:80px 60px;
+}
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+.section-title h2{
+    font-family:'Playfair Display', serif;
+    font-size:40px;
+    color:#111;
+}
+
+.collections{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.card{
+    background:#fff;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-10px);
+}
+.card h3{
+    margin-top:15px;
+}
+
+.about{
+    background:#fff;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+.about p{
+    line-height:1.8;
+}
+
+.why-us{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+}
+.why-card{
+    background:#111;
+    color:#fff;
+    padding:30px;
+    text-align:center;
+}
+.why-card h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+.contact{
+    background:#111;
+    color:#fff;
+    text-align:center;
+}
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+footer{
+    background:#000;
+    color:#aaa;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+    .about{
+        grid-template-columns:1fr;
+    }
+    .hero h2{
+        font-size:40px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>PARIDHANAM</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Collections</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>Where Tradition Meets Style</h2>
+        <p>Premium Clothing for Every Occasion</p>
+        <button>Explore Collection</button>
+    </div>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>Our Collections</h2>
+    </div>
+    <div class="collections">
+        <div class="card"><h3>Men’s Wear</h3></div>
+        <div class="card"><h3>Women’s Wear</h3></div>
+        <div class="card"><h3>Kids Wear</h3></div>
+        <div class="card"><h3>Ethnic Wear</h3></div>
+        <div class="card"><h3>Western Wear</h3></div>
+        <div class="card"><h3>Party & Casuals</h3></div>
+    </div>
+</section>
+
+<section class="about">
+    <div>
+        <h2>About PARIDHANAM</h2>
+        <p>
+            PARIDHANAM is a premium garment store offering all types of clothing
+            for men, women, and kids. We believe in combining tradition with
+            modern fashion, delivering quality fabrics, elegant designs, and
+            affordable luxury.
+        </p>
+    </div>
+    <div>
+        <h2>Founder</h2>
+        <p>
+            Founded by <b>Shatrughan Jaiswal</b>, PARIDHANAM is built on trust,
+            craftsmanship, and customer satisfaction.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>Why Choose Us</h2>
+    </div>
+    <div class="why-us">
+        <div class="why-card">
+            <h3>Premium Quality</h3>
+            <p>Best fabrics & finishing</p>
+        </div>
+        <div class="why-card">
+            <h3>Latest Trends</h3>
+            <p>Modern & ethnic styles</p>
+        </div>
+        <div class="why-card">
+            <h3>Affordable</h3>
+            <p>Luxury at right price</p>
+        </div>
+        <div class="why-card">
+            <h3>Trusted Brand</h3>
+            <p>Customer satisfaction</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Mobile: <b>7004338372</b></p>
+    <p>Visit us for premium fashion experience</p>
+</section>
+
+<footer>
+    <p>© 2026 PARIDHANAM | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
